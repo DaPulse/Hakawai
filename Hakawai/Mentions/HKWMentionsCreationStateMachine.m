@@ -522,7 +522,7 @@ typedef NS_ENUM(NSInteger, HKWMentionsCreationAction) {
         // Placeholder frame; used until the constraints are properly applied
         chooserFrame = CGRectMake(0,
                                   0,
-                                  [UIApplication sharedApplication].keyWindow.bounds.size.width,
+                                  [UIScreen mainScreen].bounds.size.width,
                                   100);
     }
     NSAssert(!CGRectIsNull(chooserFrame), @"Logic error: got a null rect for the chooser view's frame");
